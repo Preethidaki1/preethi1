@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --main-color: #033a80;
+    --bg-color: #bdb9b9c9;
+    --text-color: #0f0c27;
+    --hover: hsl(260, 100%, 51%);
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+section {
+    padding: 220px 18% 150px;
+}
+body.active {
+    --text-color: #fff;
+    --bg-color: #0f0c27;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+*::selection {
+   background: var(--main-color);
+   color: var(--bg-color);
+}
+.heading {
+    text-align: center;
+}
+.heading h2 {
+    font-size: 30px;
+}
+.heading span {
+    font-size: var(--p-font);
+    color: rgb(161, 18, 18);
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background: #269d8b;
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -4px 8px #ffffff73,
+        2px 2px 5px rgba(45, 67, 105, 0.511);
+}
+header.shadow {
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+/* Add your existing styles here */
+.courses-container {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    justify-content: center;
+}
+.bars h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #bd9512c9;
+    font-size: 16px;
+}
+.progress-bar{
+    background: #5385d575;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: #1b772c;
+    animation: html 1s linear forwards;
+}
+.css{
+    background: #052528;
+    animation: css 1s linear forwards;
+}
+.javascript{
+    background: #cddc39;
+    animation: javascript 1s linear forwards;
+}
+.python{
+    background: #000;
+    animation: python 1s linear forwards;
+}
+.html span {
+    border: 1px solid #1b772c;
+}
+.css span {
+    border: 1px solid #052528;
+}
+.javascript span {
+    border: 1px solid #1b772c;
+}
+.python span {
+    border: 1px solid #1b772c;
+}
+@keyframes html{
+    100%{
+        width: 83%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 80%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 60%;
+    }
+}
+@keyframes python{
+    100%{
+        width: 70%;
+    }
+}
